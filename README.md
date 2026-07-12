@@ -47,11 +47,31 @@ Using three tools on one dataset served two purposes: practicing the same analyt
 ## 📊 Analysis Performed
 
 ### SQL
-1. Count and percentage of Female vs. Male patients, with average Obsession Score by gender
-2. Count of patients by Ethnicity and their respective average Obsession Score
-3. Count of patients by diagnosis month (time trend)
-4. Most common Obsession Type (count) and its average Obsession Score
-5. Most common Compulsion Type (count) and its average Obsession Score
+
+**1. Count and percentage of Female vs. Male patients, with average Obsession Score by gender**
+```sql
+
+```
+
+**2. Count of patients by Ethnicity and their respective average Obsession Score**
+```sql
+
+```
+
+**3. Count of patients by diagnosis month (time trend)**
+```sql
+
+```
+
+**4. Most common Obsession Type (count) and its average Obsession Score**
+```sql
+
+```
+
+**5. Most common Compulsion Type (count) and its average Obsession Score**
+```sql
+
+```
 
 ### Power BI Dashboard
 - Sum of patient count by month (2014–2022 trend line)
