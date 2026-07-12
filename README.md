@@ -72,6 +72,8 @@ select
 from data;
 ```
 
+![Query 1 - Gender count and percentage](assets/sql/query1_gender.png)
+
 **2. Count of patients by Ethnicity and their respective average Obsession Score**
 ```sql
 # -- 2. Count of Patients by Ethnicity and their respective Average Obsession Score
@@ -85,6 +87,8 @@ Group by 1
 Order by 2;
 ```
 
+![Query 2 - Ethnicity breakdown](assets/sql/query2_ethnicity.png)
+
 **3. Count of patients by diagnosis month (time trend)**
 ```sql
 select
@@ -95,6 +99,8 @@ from health_data.ocd_patient_dataset
 group by 1
 Order by 1;
 ```
+
+![Query 3 - Diagnosis trend by month](assets/sql/query3_monthly_trend.png)
 
 **4. Most common Obsession Type (count) and its average Obsession Score**
 ```sql
@@ -109,6 +115,8 @@ group by 1
 Order by 2;
 ```
 
+![Query 4 - Obsession type breakdown](assets/sql/query4_obsession_type.png)
+
 **5. Most common Compulsion Type (count) and its average Obsession Score**
 ```sql
 # -- 5. What is the most common Compulsion type (Count) & it's respective Average Obsession Score
@@ -122,6 +130,8 @@ group by 1
 Order by 2;
 ```
 
+![Query 5 - Compulsion type breakdown](assets/sql/query5_compulsion_type.png)
+
 ### Power BI Dashboard
 - Sum of patient count by month (2014–2022 trend line)
 - Sum of patient count by Gender (donut chart)
@@ -129,12 +139,16 @@ Order by 2;
 - Sum of patient count by Compulsion Type (bar chart)
 - Obsession count against average Obsession Score by Obsession Type
 
+  ![Query 2 - Ethnicity breakdown](assets/sql/query2_ethnicity.png)
+
 ### Excel Dashboard
 - Compulsion Type distribution (bar chart)
 - Ethnicity distribution (column chart)
 - Obsession Type distribution (column chart)
 - Gender split (pie chart)
 - Diagnosis month-over-month trend (line chart, Nov 2013 – Nov 2022)
+
+  ![Query 2 - Ethnicity breakdown](assets/sql/query2_ethnicity.png)
 
 ## 🔍 Key Findings
 
