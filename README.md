@@ -1,102 +1,6 @@
 # 🏥 Health Data Analytics Project (SQL + Power BI + Excel)
 
 ## 📋 Overview
-This project is a health analytics case study built around an OCD (Obsessive-Compulsive Disorder) patient dataset. The goal was to explore patient demographics and clinical patterns — gender, ethnicity, obsession types, compulsion types, and diagnosis trends over time — using three complementary approaches: **SQL** for direct querying and aggregation, and **Power BI** and **Excel** for interactive/visual dashboard reporting on the same underlying data.
-
-Using three tools on one dataset served two purposes: practicing the same analytical questions across different platforms, and cross-checking results between sources to catch inconsistencies.
-
-## 🗂️ Dataset
-**Key fields:** Patient ID, Gender, Ethnicity, OCD Diagnosis Date, Obsession Type, Compulsion Type, Y-BOCS Score (Obsessions)
-
-## 🛠️ Tools Used
-
-| Tool | Purpose |
-|---|---|
-| SQL (MySQL Workbench) | Querying, aggregating, and analyzing the raw patient dataset |
-| Power BI | Interactive dashboard for visualizing demographics and clinical patterns |
-| Excel | Secondary dashboard/chart-based reporting view of the same dataset |
-
-## 🔄 Process
-
-1. **Data Preparation**
-   - Loaded the OCD patient dataset into a MySQL database as `health_data.ocd_patient_dataset`
-   - Confirmed key fields: Patient ID, Gender, Ethnicity, OCD Diagnosis Date, Obsession Type, Compulsion Type, Y-BOCS Score (Obsessions)
-
-2. **SQL Analysis**
-   - Wrote a series of query blocks, each targeting one specific business/clinical question
-   - Used `GROUP BY`, `COUNT()`, `AVG()`, `ROUND()`, and `CASE WHEN` logic to pivot gender counts into percentages
-   - Used `DATE_FORMAT()` to bucket diagnosis dates into monthly periods for trend analysis
-   - Ordered and grouped results to identify most/least common categories at a glance
-
-3. **Power BI Dashboard Build**
-   - Connected Power BI to the same dataset
-   - Built five visuals: a monthly patient-count trend line, a gender donut chart, an ethnicity bar chart, a compulsion-type bar chart, and a combo chart comparing obsession type counts against average obsession score
-
-4. **Excel Dashboard Build**
-   - Replicated a similar set of visuals in Excel (compulsion type, ethnicity, obsession type, gender, and a diagnosis month-over-month trend line) as a lightweight alternative to the Power BI dashboard
-
-5. **Cross-Validation**
-   - Compared results across all three tools for the same metrics (e.g., gender split, ethnicity counts)
-   - Identified a discrepancy in ethnicity distribution between the Power BI view and the SQL/Excel views, flagged for follow-up rather than silently resolved
-
-6. **Synthesis**
-   - Compiled findings from each tool into separate findings documents, then combined them into a single overview to highlight where all three sources agree and where they diverge
-
----
-
-## 💻 SQL Code & Queries
-
-Below are the SQL scripts executed in MySQL Workbench to extract the clinical and demographic insights.
-
-### 1. Gender Demographics & Severity
-```sql
--- Insert your SQL query for gender count, percentages, and average Y-BOCS scores here
-```
-
-### 2. Ethnic Distribution & Severity
-```sql
--- Insert your SQL query for patient counts and average obsession scores by ethnicity here
-```
-
-### 3. Diagnosis Timeline Trends
-```sql
--- Insert your SQL query for patient volume bucketed by diagnosis month here
-```
-
-### 4. Obsession Type Prevalence & Severity
-```sql
--- Insert your SQL query ranking obsession types by frequency and average score here
-```
-
-### 5. Compulsion Type Prevalence & Severity
-```sql
--- Insert your SQL query ranking compulsion types by frequency and average score here
-```
-
----
-
-## 📊 Dashboards & Visualizations
-
-
-
-
-
-hi
-Hello! How can I help you today?
-If you are looking for assistance, please let me know:
-What topic you want to discuss
-Any specific questions you have
-How I can best assist you
-Let me know what you need, and we can get started!
-
-
-
-
-Give me the space for the image and also for the code 
-
-# 🏥 Health Data Analytics Project (SQL + Power BI + Excel)
-
-## 📋 Overview
 
 This project is a health analytics case study built around an OCD (Obsessive-Compulsive Disorder) patient dataset. The goal was to explore patient demographics and clinical patterns — gender, ethnicity, obsession types, compulsion types, and diagnosis trends over time — using three complementary approaches: **SQL** for direct querying and aggregation, and **Power BI** and **Excel** for interactive/visual dashboard reporting on the same underlying data.
 
@@ -189,6 +93,8 @@ Using three tools on one dataset served two purposes: practicing the same analyt
 
 **Summary Insight:** This OCD patient population is demographically balanced (gender and ethnicity show no major skew or severity differences), while the clinical patterns are more telling: harm-related obsessions and washing compulsions are most prevalent, but hoarding and counting are linked to higher average obsession severity despite being less common — a useful distinction between frequency and severity for treatment prioritization.
 
+---
+
 ### Health Analytics Dashboard (Excel)
 
 **1. Compulsion Type**
@@ -213,4 +119,39 @@ Using three tools on one dataset served two purposes: practicing the same analyt
 - The pattern is cyclical/noisy rather than seasonal or trending — diagnosis volume rises and falls sharply month to month without a sustained growth pattern, suggesting steady, ongoing intake rather than accelerating case volume.
 - A slight decline is visible right at the very end of the series (into late 2022), though this may reflect incomplete data for the most recent period rather than a genuine drop.
 
-**Summary Insight:** The dashboard reinforces that this OCD patient population is demographically balanced (gender and ethnicity), while clinically, harm-related obsessions and washing/counting compulsions are the most prevalent presentations.
+**Summary Insight:** The dashboard reinforces that this OCD patient population is demographically balanced (gender and ethnicity), while clinically, harm-related obsessions and washing/counting compulsions are the most prevalent presentations. Diagnosis volume has stayed relatively steady over nearly a decade with no major long-term trend, indicating consistent (rather than growing or shrinking) patient intake over time.
+
+---
+
+### Health Analytics Dashboard (Power BI)
+
+**1. Patient Count Trend by Month**
+- Monthly diagnosis counts fluctuate consistently between roughly 5 and 20+ patients across the full 2014–2022 period, with no sustained long-term upward or downward trend.
+- The pattern is cyclical and noisy rather than seasonal — sharp month-to-month spikes and dips repeat throughout the whole timeframe, pointing to steady, ongoing patient intake rather than accelerating or declining case volume.
+- There's a visible dip right at the very end of the series (late 2022), though this likely reflects incomplete data for the most recent period rather than an actual drop in diagnoses.
+
+**2. Gender Distribution**
+- The patient base is almost perfectly split by gender: 753 Male (50.2%) vs. 747 Female (49.8%) — confirming no meaningful gender skew in this OCD population.
+
+**3. Ethnicity Breakdown**
+- Caucasian patients form the largest group (~398), followed closely by Hispanic (~392) and Asian (~386).
+- African patients are the smallest group (~324) — noticeably lower than the other three, which are all clustered close together near 390–400.
+
+**4. Compulsion Type**
+- Washing is the most common compulsion type (~320 patients), followed by Counting (~316).
+- Checking (~292), Praying (~286), and Ordering (~285) are all less common and fairly close to one another.
+- The overall spread shows a gradual decline from Washing down to Ordering rather than one dominant outlier.
+
+**5. Obsession Type vs. Average Obsession Score**
+- Ranked by patient count, Harm-related obsessions are the most common, followed by Contamination, Religious, Symmetry, and Hoarding (least common).
+- The average obsession score line stays relatively flat and low across all obsession types, indicating that obsession severity doesn't vary much by type — the differences between obsession types are driven mainly by how common they are, not by how severe they tend to be.
+
+**Summary Insight:** This dashboard confirms the OCD patient population is demographically balanced by gender, with only African patients under-represented relative to other ethnic groups. Clinically, Washing and Counting are the dominant compulsions, and Harm-related obsessions are the most frequent presentation, while obsession severity scores stay fairly consistent regardless of type — suggesting prevalence, not severity, is what differentiates these categories. Diagnosis volume has remained steady over nearly a decade with no major structural trend.
+
+## ✅ Highlights Across All Three Tools
+
+- **Gender** is almost perfectly balanced: 753 Male (50.2%) vs. 747 Female (49.8%), consistent across SQL, Power BI, and Excel.
+- **Ethnicity** distribution differs slightly by source: the SQL query and Excel dashboard show all four ethnic groups fairly close together, while the Power BI dashboard shows African patients clearly under-represented relative to Caucasian, Hispanic, and Asian — worth reconciling before reporting a single figure.
+- **Washing** and **Counting** are the most common compulsion types, consistently across all three views, while Ordering and Praying are the least common.
+- **Harm-related obsessions** are the most common obsession type, but **Hoarding** (least common) is tied to the highest average obsession severity score in the SQL analysis — indicating frequency and severity don't move together.
+- **Diagnosis volume** has stayed relatively steady over time (2013/2014–2022), fluctuating cyclically month to month with no clear long-term upward or downward trend, aside from a possible data-completeness dip at the very end of the series.
