@@ -144,7 +144,8 @@ Order by 2;
 - Sum of patient count by Compulsion Type (bar chart)
 - Obsession count against average Obsession Score by Obsession Type
 
-  <img width="1075" height="711" alt="Screenshot 2026-07-12 172102" src="https://github.com/user-attachments/assets/43e54e01-7eee-422e-8ff5-2446bae00b52" />
+  <img width="1347" height="736" alt="Screenshot 2026-07-12 172009" src="https://github.com/user-attachments/assets/b740459b-211e-49a7-be21-0eee2bc5ad91" />
+
 
 
 ### Excel Dashboard
@@ -154,7 +155,8 @@ Order by 2;
 - Gender split (pie chart)
 - Diagnosis month-over-month trend (line chart, Nov 2013 – Nov 2022)
 
-  <img width="1347" height="736" alt="Screenshot 2026-07-12 172009" src="https://github.com/user-attachments/assets/2d83482e-227d-4195-aaf3-81d3f23c3c4f" />
+  <img width="1075" height="711" alt="Screenshot 2026-07-12 172102" src="https://github.com/user-attachments/assets/5826b04b-4b18-4945-87e1-3c6d64411f7e" />
+
 
 
 ## 🔍 Key Findings
