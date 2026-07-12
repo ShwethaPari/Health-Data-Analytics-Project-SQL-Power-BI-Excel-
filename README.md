@@ -77,17 +77,91 @@ Below are the SQL scripts executed in MySQL Workbench to extract the clinical an
 
 ## 📊 Dashboards & Visualizations
 
-### Power BI Dashboard
-*Interactive view showing end-to-end clinical metrics, built-in filters, and dynamic patient count trends.*
 
-![Power BI Dashboard View](path/to/your/powerbi_dashboard_screenshot.png)
+
+
+
+hi
+Hello! How can I help you today?
+If you are looking for assistance, please let me know:
+What topic you want to discuss
+Any specific questions you have
+How I can best assist you
+Let me know what you need, and we can get started!
+
+
+
+
+Give me the space for the image and also for the code 
+
+# 🏥 Health Data Analytics Project (SQL + Power BI + Excel)
+
+## 📋 Overview
+
+This project is a health analytics case study built around an OCD (Obsessive-Compulsive Disorder) patient dataset. The goal was to explore patient demographics and clinical patterns — gender, ethnicity, obsession types, compulsion types, and diagnosis trends over time — using three complementary approaches: **SQL** for direct querying and aggregation, and **Power BI** and **Excel** for interactive/visual dashboard reporting on the same underlying data.
+
+Using three tools on one dataset served two purposes: practicing the same analytical questions across different platforms, and cross-checking results between sources to catch inconsistencies.
+
+## 🗂️ Dataset
+
+**Key fields:** Patient ID, Gender, Ethnicity, OCD Diagnosis Date, Obsession Type, Compulsion Type, Y-BOCS Score (Obsessions)
+
+## 🛠️ Tools Used
+
+| Tool | Purpose |
+|---|---|
+| SQL (MySQL Workbench) | Querying, aggregating, and analyzing the raw patient dataset |
+| Power BI | Interactive dashboard for visualizing demographics and clinical patterns |
+| Excel | Secondary dashboard/chart-based reporting view of the same dataset |
+
+## 🔄 Process
+
+1. **Data Preparation**
+   - Loaded the OCD patient dataset into a MySQL database as `health_data.ocd_patient_dataset`
+   - Confirmed key fields: Patient ID, Gender, Ethnicity, OCD Diagnosis Date, Obsession Type, Compulsion Type, Y-BOCS Score (Obsessions)
+
+2. **SQL Analysis**
+   - Wrote a series of query blocks, each targeting one specific business/clinical question
+   - Used `GROUP BY`, `COUNT()`, `AVG()`, `ROUND()`, and `CASE WHEN` logic to pivot gender counts into percentages
+   - Used `DATE_FORMAT()` to bucket diagnosis dates into monthly periods for trend analysis
+   - Ordered and grouped results to identify most/least common categories at a glance
+
+3. **Power BI Dashboard Build**
+   - Connected Power BI to the same dataset
+   - Built five visuals: a monthly patient-count trend line, a gender donut chart, an ethnicity bar chart, a compulsion-type bar chart, and a combo chart comparing obsession type counts against average obsession score
+
+4. **Excel Dashboard Build**
+   - Replicated a similar set of visuals in Excel (compulsion type, ethnicity, obsession type, gender, and a diagnosis month-over-month trend line) as a lightweight alternative to the Power BI dashboard
+
+5. **Cross-Validation**
+   - Compared results across all three tools for the same metrics (e.g., gender split, ethnicity counts)
+   - Identified a discrepancy in ethnicity distribution between the Power BI view and the SQL/Excel views, flagged for follow-up rather than silently resolved
+
+6. **Synthesis**
+   - Compiled findings from each tool into separate findings documents, then combined them into a single overview to highlight where all three sources agree and where they diverge
+
+## 📊 Analysis Performed
+
+### SQL
+1. Count and percentage of Female vs. Male patients, with average Obsession Score by gender
+2. Count of patients by Ethnicity and their respective average Obsession Score
+3. Count of patients by diagnosis month (time trend)
+4. Most common Obsession Type (count) and its average Obsession Score
+5. Most common Compulsion Type (count) and its average Obsession Score
+
+### Power BI Dashboard
+- Sum of patient count by month (2014–2022 trend line)
+- Sum of patient count by Gender (donut chart)
+- Sum of patient count by Ethnicity (bar chart)
+- Sum of patient count by Compulsion Type (bar chart)
+- Obsession count against average Obsession Score by Obsession Type
 
 ### Excel Dashboard
-*Lightweight, pivot-table-driven visual reporting layer used for cross-tool validation.*
-
-![Excel Dashboard View](path/to/your/excel_dashboard_screenshot.png)
-
----
+- Compulsion Type distribution (bar chart)
+- Ethnicity distribution (column chart)
+- Obsession Type distribution (column chart)
+- Gender split (pie chart)
+- Diagnosis month-over-month trend (line chart, Nov 2013 – Nov 2022)
 
 ## 🔍 Key Findings
 
