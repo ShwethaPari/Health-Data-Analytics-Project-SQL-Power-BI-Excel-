@@ -72,7 +72,8 @@ select
 from data;
 ```
 
-![Query 1 - Gender count and percentage](assets/sql/query1_gender.png)
+<img width="916" height="756" alt="Screenshot 2026-07-12 172236" src="https://github.com/user-attachments/assets/28ffedd7-ce34-4773-9d90-2ae63b227cf7" />
+
 
 **2. Count of patients by Ethnicity and their respective average Obsession Score**
 ```sql
@@ -87,7 +88,8 @@ Group by 1
 Order by 2;
 ```
 
-![Query 2 - Ethnicity breakdown](assets/sql/query2_ethnicity.png)
+<img width="826" height="461" alt="Screenshot 2026-07-12 172315" src="https://github.com/user-attachments/assets/249fe0f2-223b-4372-945d-9a7d22b4fc3b" />
+
 
 **3. Count of patients by diagnosis month (time trend)**
 ```sql
@@ -100,7 +102,8 @@ group by 1
 Order by 1;
 ```
 
-![Query 3 - Diagnosis trend by month](assets/sql/query3_monthly_trend.png)
+<img width="713" height="467" alt="Screenshot 2026-07-12 172344" src="https://github.com/user-attachments/assets/a80cca40-2520-421f-82e5-69debce5611d" />
+
 
 **4. Most common Obsession Type (count) and its average Obsession Score**
 ```sql
@@ -115,7 +118,8 @@ group by 1
 Order by 2;
 ```
 
-![Query 4 - Obsession type breakdown](assets/sql/query4_obsession_type.png)
+<img width="922" height="547" alt="Screenshot 2026-07-12 172406" src="https://github.com/user-attachments/assets/8c36bfac-17c6-420e-b9fb-b0706e6c133c" />
+
 
 **5. Most common Compulsion Type (count) and its average Obsession Score**
 ```sql
@@ -130,7 +134,8 @@ group by 1
 Order by 2;
 ```
 
-![Query 5 - Compulsion type breakdown](assets/sql/query5_compulsion_type.png)
+<img width="952" height="482" alt="Screenshot 2026-07-12 172450" src="https://github.com/user-attachments/assets/38693db7-6587-423e-aa63-6d6ac4bf43b0" />
+
 
 ### Power BI Dashboard
 - Sum of patient count by month (2014–2022 trend line)
@@ -139,7 +144,8 @@ Order by 2;
 - Sum of patient count by Compulsion Type (bar chart)
 - Obsession count against average Obsession Score by Obsession Type
 
-  ![Query 2 - Ethnicity breakdown](assets/sql/query2_ethnicity.png)
+  <img width="1075" height="711" alt="Screenshot 2026-07-12 172102" src="https://github.com/user-attachments/assets/43e54e01-7eee-422e-8ff5-2446bae00b52" />
+
 
 ### Excel Dashboard
 - Compulsion Type distribution (bar chart)
@@ -148,7 +154,8 @@ Order by 2;
 - Gender split (pie chart)
 - Diagnosis month-over-month trend (line chart, Nov 2013 – Nov 2022)
 
-  ![Query 2 - Ethnicity breakdown](assets/sql/query2_ethnicity.png)
+  <img width="1347" height="736" alt="Screenshot 2026-07-12 172009" src="https://github.com/user-attachments/assets/2d83482e-227d-4195-aaf3-81d3f23c3c4f" />
+
 
 ## 🔍 Key Findings
 
