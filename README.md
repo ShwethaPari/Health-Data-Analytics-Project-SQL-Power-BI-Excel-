@@ -1,16 +1,16 @@
-# Health Data Analytics Project (SQL + Power BI + Excel)
+# 🏥 Health Data Analytics Project (SQL + Power BI + Excel)
 
-## Overview
+## 📋 Overview
 
 This project is a health analytics case study built around an OCD (Obsessive-Compulsive Disorder) patient dataset. The goal was to explore patient demographics and clinical patterns — gender, ethnicity, obsession types, compulsion types, and diagnosis trends over time — using three complementary approaches: **SQL** for direct querying and aggregation, and **Power BI** and **Excel** for interactive/visual dashboard reporting on the same underlying data.
 
 Using three tools on one dataset served two purposes: practicing the same analytical questions across different platforms, and cross-checking results between sources to catch inconsistencies.
 
-## Dataset
+## 🗂️ Dataset
 
 **Key fields:** Patient ID, Gender, Ethnicity, OCD Diagnosis Date, Obsession Type, Compulsion Type, Y-BOCS Score (Obsessions)
 
-## Tools Used
+## 🛠️ Tools Used
 
 | Tool | Purpose |
 |---|---|
@@ -18,7 +18,7 @@ Using three tools on one dataset served two purposes: practicing the same analyt
 | Power BI | Interactive dashboard for visualizing demographics and clinical patterns |
 | Excel | Secondary dashboard/chart-based reporting view of the same dataset |
 
-## Process
+## 🔄 Process
 
 1. **Data Preparation**
    - Loaded the OCD patient dataset into a MySQL database as `health_data.ocd_patient_dataset`
@@ -44,7 +44,7 @@ Using three tools on one dataset served two purposes: practicing the same analyt
 6. **Synthesis**
    - Compiled findings from each tool into separate findings documents, then combined them into a single overview to highlight where all three sources agree and where they diverge
 
-## Analysis Performed
+## 📊 Analysis Performed
 
 ### SQL
 1. Count and percentage of Female vs. Male patients, with average Obsession Score by gender
@@ -67,7 +67,7 @@ Using three tools on one dataset served two purposes: practicing the same analyt
 - Gender split (pie chart)
 - Diagnosis month-over-month trend (line chart, Nov 2013 – Nov 2022)
 
-## Key Findings
+## 🔍 Key Findings
 
 ### Health Analytics (SQL)
 
@@ -148,7 +148,7 @@ Using three tools on one dataset served two purposes: practicing the same analyt
 
 **Summary Insight:** This dashboard confirms the OCD patient population is demographically balanced by gender, with only African patients under-represented relative to other ethnic groups. Clinically, Washing and Counting are the dominant compulsions, and Harm-related obsessions are the most frequent presentation, while obsession severity scores stay fairly consistent regardless of type — suggesting prevalence, not severity, is what differentiates these categories. Diagnosis volume has remained steady over nearly a decade with no major structural trend.
 
-## Highlights Across All Three Tools
+## ✅ Highlights Across All Three Tools
 
 - **Gender** is almost perfectly balanced: 753 Male (50.2%) vs. 747 Female (49.8%), consistent across SQL, Power BI, and Excel.
 - **Ethnicity** distribution differs slightly by source: the SQL query and Excel dashboard show all four ethnic groups fairly close together, while the Power BI dashboard shows African patients clearly under-represented relative to Caucasian, Hispanic, and Asian — worth reconciling before reporting a single figure.
